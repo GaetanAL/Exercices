@@ -36,16 +36,33 @@
       <div id="eval">
         <div id="recommend">
           <section>
-            <h3> Recommanderez-vous ce produit à d'autres clients ?</h3>
+            <h3> Recommanderez-vous ce produit à d'autres clients ?</h3>  
+            <label for="rec-form">Oui</label>
+            <input type="radio" name="rec-form" id="rec-form">
+            <label for="rec-form">Non</label>
+            <input type="radio" name="rec-form" id="rec-form">
           </section>
         </div>
         <div id="rating">
           <h3>Donnez une note entre 1 et 5 :</h3>
+            <select name="rating-form" id="rating-form" >
+              <option value="" selected disabled hidden>Choisir</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
         </div>
       </div>
       <div id="comment">
-        <h3>Ajoutez un commentaire!</h3>
+          <h3>Ajoutez un commentaire!</h3>
+          <label for="comment-title">Titre:</label><br>
+          <input type="text" placeholder="Que voulez-vous dire sur le produit ?" name="comment-title" id="comment-title"><br>
+          <label for="comment-message">Message:</label>
+          <textarea name="comment-message" id="comment-message"></textarea>
       </div>
+      <input type="submit" value="Envoyer">
     </form>
   </main>
 </body>
